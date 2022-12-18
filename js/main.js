@@ -7,7 +7,7 @@ console.log(userName);
         let username = prompt("Введите Ваш никнейм:");
         localStorage.setItem('username', username);
     }
-
+renderposts();
     function addPost(){
         let message = document.getElementById('usertext').value;
         let date = new Date().toLocaleString();
