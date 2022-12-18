@@ -1,11 +1,10 @@
 <script>
 
 let userName = localStorage.getItem('username');
-    alert(userName);
     if(userName == null || userName == ''){
         setUsername();
     } 
-    addPost();
+console.log(userName);
     function setUsername(){
         let username = prompt("Введите Ваш никнейм:");
         localStorage.setItem('username', username);
