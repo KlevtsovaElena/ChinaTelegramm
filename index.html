@@ -8,26 +8,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mende+Kikakui&family=Ubuntu&display=swap" rel="stylesheet">
+    <script defer src="js/main.js"></script>
     <title>Messenger</title>
 </head>
 <body>
-
-    <div id="message">
-        <div class="header">Hackaton messenger v1.0</div>
-         <!-- <div class="flex-box ${}">
-            <div class="window">
-                <div class="name">${name}</div>
-                <div class="text">${text}</div>
-                <div class="time">${time}</div>
-            </div> -->
-            <div class="sendmessage">
-                <input id="usertext" type="text">
-                <button class="send" onclick="addPost()">Send</button>
+    <div class="gog">
+        <div id="message">
+            <div class="header">Hackaton messenger v1.0</div>
+            <!-- <div class="flex-box ${}">
+                <div class="window">
+                    <div class="name">${name}</div>
+                    <div class="text">${text}</div>
+                    <div class="time">${time}</div>
+                </div> -->
+                
             </div>
+            
+            
         </div>
-        
+        <div class="sendmessage">
+            <input id="usertext" type="text">
+            <button class="send" onclick="addPost()">Send</button>
+        </div>
     </div>
-
     <template id="text-message">
         <div class="flex-box ${}">
             <div class="window">
@@ -37,6 +40,5 @@
             </div>
         </div>
     </template>
-    <script src="js/main.js"></script>
 </body>
 </html>

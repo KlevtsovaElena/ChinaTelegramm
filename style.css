@@ -8,9 +8,9 @@ body {
 }
 
 #message {
-    overflow: scroll;
+    overflow-y: scroll;
     background-color: grey;
-    height: 100vh;
+    height: 90vh;
 }
 
 .header {
@@ -79,9 +79,10 @@ body {
 }
 
 .sendmessage {
-    bottom: 20%;
+    bottom: 5%;
     position: fixed;
-    right: 42%;
+    width: 300px;
+    right: calc(50% - 150px);
 }
 
 #usertext {
@@ -107,4 +108,9 @@ body {
     align-items: flex-end;
     padding: 10px;
     border-radius: 10px;
+}
+.gog{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
