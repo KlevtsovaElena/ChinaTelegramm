@@ -1,4 +1,4 @@
-    let userName = localStorage.getItem('username');
+    let userName = window.localStorage.getItem('username');
     if(userName == null || userName == ''){
         setUsername();
     } 
@@ -12,7 +12,6 @@ renderposts();
         let message = document.getElementById('usertext').value;
         let date = new Date().toLocaleString();
         let url = 'https://ChinaTelegram.perfectpink.repl.co/?addpost&name=' + userName + '&message=' + message + '&date=' + date;
-        alert(url);
         let xhr = new XMLHttpRequest();
         xhr.open('GET', url, false);
         xhr.send();
