@@ -32,13 +32,13 @@ renderposts();
                 container.innerHTML += template.replace('${name}',db[i]['name'])
                 .replace('${text}',db[i]['message'])
                 .replace('${time}',db[i]['date'])
-                .replace('${class}','right')
+                .replace('${}','right')
             }else{
                 container.innerHTML += template.replace('',)
                 .replace('${name}',db[i]['name'])
                 .replace('${text}',db[i]['message'])
                 .replace('${time}',db[i]['date'])
-                .replace('${class}','left')
+                .replace('${}','left')
             }
         }
     }
