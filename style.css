@@ -1,0 +1,105 @@
+body {
+    padding: 0;
+    margin: 0 auto;
+    background-color:white;
+    width: 1300px;
+    font-family: 'Noto Sans Mende Kikakui', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#message {
+    background-color: grey;
+    height: 100vh;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    width: 100px;
+    height: 25px;
+    border: 1px solid black;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 25px;
+}
+
+.text {
+    width: 300px;
+    height: 75px;
+    border: 1px solid black;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 75px;
+}
+
+.time {
+    width: 100px;
+    height: 20px;
+    border: 1px solid black;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 20px;
+}
+
+.margin-top {
+    margin-top: 5px;
+}
+
+.window {
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.sendmessage {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 70vh;
+}
+
+#usertext {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.left {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    border-radius: 10px;
+}
