@@ -42,8 +42,7 @@ console.log(userName);
                 .replace('${time}',db[i]['date'])
                 .replace('${}','right')
             }else{
-                container.innerHTML += template.replace('',)
-                .replace('${name}',db[i]['name'])
+                container.innerHTML += template .replace('${name}',db[i]['name'])
                 .replace('${text}',db[i]['message'])
                 .replace('${time}',db[i]['date'])
                 .replace('${}','left')
