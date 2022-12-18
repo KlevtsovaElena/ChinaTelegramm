@@ -7,14 +7,19 @@ console.log(userName);
         let username = prompt("Введите Ваш никнейм:");
         localStorage.setItem('username', username);
     }
+
 renderposts();
+
+
+
     function addPost(){
         let message = document.getElementById('usertext').value;
-        let date = new Date().toLocaleString();
+        let date = new Date().toLocaleTimeString().slice(0, -3);
         let url = 'https://ChinaTelegram.perfectpink.repl.co/?addpost&name=' + userName + '&message=' + message + '&date=' + date;
         let xhr = new XMLHttpRequest();
         xhr.open('GET', url, false);
         xhr.send();
+        renderposts();
     }
 
     function renderposts(){
