@@ -8,7 +8,10 @@ console.log(userName);
         window.localStorage.setItem('username', username);
     }
 
-renderposts();
+    setInterval(function(){
+        renderposts();
+    }, 3000);
+
 
 
 
