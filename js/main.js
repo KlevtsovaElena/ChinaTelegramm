@@ -18,11 +18,15 @@ console.log(userName);
     function addPost(){
         let message = document.getElementById('usertext').value;
         let date = new Date().toLocaleTimeString().slice(0, -3);
+        if (userName == null || userName == '' || userName == undefined){
+            setUsername();
+        }else {
         let url = 'https://ChinaTelegram.perfectpink.repl.co/?addpost&name=' + userName + '&message=' + message + '&date=' + date;
         let xhr = new XMLHttpRequest();
         xhr.open('GET', url, false);
         xhr.send();
         renderposts();
+        }
     }
 
     function renderposts(){
