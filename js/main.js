@@ -31,13 +31,13 @@ renderposts();
             if(window.localStorage.username == db[i]['name']){
                 container.innerHTML += template.replace('${name}',db[i]['name'])
                 .replace('${text}',db[i]['message'])
-                .replace('${time}',db[i]['data'])
+                .replace('${time}',db[i]['date'])
                 .replace('${class}','right')
             }else{
                 container.innerHTML += template.replace('',)
                 .replace('${name}',db[i]['name'])
                 .replace('${text}',db[i]['message'])
-                .replace('${time}',db[i]['data'])
+                .replace('${time}',db[i]['date'])
                 .replace('${class}','left')
             }
         }
