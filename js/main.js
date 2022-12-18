@@ -5,7 +5,7 @@
 console.log(userName);
     function setUsername(){
         let username = prompt("Введите Ваш никнейм:");
-        localStorage.setItem('username', username);
+        window.localStorage.setItem('username', username);
     }
 
 renderposts();

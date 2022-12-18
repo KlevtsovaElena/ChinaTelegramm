@@ -8,8 +8,21 @@ body {
 }
 
 #message {
+    overflow: scroll;
     background-color: grey;
     height: 100vh;
+}
+
+.header {
+    background-color: rgb(255, 135, 135);
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 2px 3px 10px black;
 }
 
 .flex-box {
@@ -17,6 +30,7 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
 }
 
 .name {
@@ -65,10 +79,9 @@ body {
 }
 
 .sendmessage {
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    height: 70vh;
+    bottom: 20%;
+    position: fixed;
+    right: 42%;
 }
 
 #usertext {
@@ -76,14 +89,6 @@ body {
     padding: 5px;
     border: 1px solid black;
     border-radius: 10px;
-}
-
-.left {
-    left: 0;
-}
-
-.right {
-    right: 0;
 }
 
 .right {

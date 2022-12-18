@@ -13,18 +13,19 @@
 <body>
 
     <div id="message">
-        <div class="flex-box ${}">
+        <div class="header">Hackaton messenger v1.0</div>
+        <!-- <div class="flex-box ${}">
             <div class="window">
                 <div class="name">${name}</div>
                 <div class="text">${text}</div>
                 <div class="time">${time}</div>
             </div>
-            
-        </div>
-        <div class="sendmessage">
-            <input id="usertext" type="text">
-            <button class="send" onclick="addPost()">Send</button>
-        </div>
+            <div class="sendmessage">
+                <input id="usertext" type="text">
+                <button class="send" onclick="addPost()">Send</button>
+            </div>
+        </div> -->
+        
     </div>
 
     <template id="text-message">
@@ -34,13 +35,11 @@
                 <div class="text">${text}</div>
                 <div class="time">${time}</div>
             </div>
-            
-        </div>
-        <div class="sendmessage">
-            <input id="usertext" type="text">
-            <button class="send" onclick="addPost()">Send</button>
+            <div class="sendmessage">
+                <input id="usertext" type="text">
+                <button class="send" onclick="addPost()">Send</button>
+            </div>
         </div>
     </template>
-    <script src="js/main.js"></script>
 </body>
 </html>
