@@ -1,11 +1,15 @@
-    let userName = window.localStorage.getItem('username');
+localStorage.clear()   
+   
+   let userName = window.localStorage.getItem('username');
     if(userName == null || userName == ''){
         setUsername();
     } 
 console.log(userName);
-    function setUsername(){
+    
+function setUsername(){
         let username = prompt("Введите Ваш никнейм:");
         window.localStorage.setItem('username', username);
+
     }
 
     setInterval(function(){
@@ -18,8 +22,9 @@ console.log(userName);
     function addPost(){
         let message = document.getElementById('usertext').value;
         let date = new Date().toLocaleTimeString().slice(0, -3);
-        if (userName == null || userName == '' || userName == undefined){
+        if (userName == null || userName == '' || userName == undefined || userName == 'null'){
             setUsername();
+            userName = window.localStorage.getItem('username');
         }else {
         let url = 'https://ChinaTelegram.perfectpink.repl.co/?addpost&name=' + userName + '&message=' + message + '&date=' + date;
         let xhr = new XMLHttpRequest();
